@@ -1,0 +1,89 @@
+h3 {
+    color: #666 !important;
+}
+
+.gray {
+    color: gray;
+}
+
+.cursor-disabled {
+     cursor: not-allowed; 
+}
+
+.gi-2x {font-size: 2em;}
+.gi-3x {font-size: 3em;}
+.gi-4x {font-size: 4em;}
+.gi-5x {font-size: 5em;}
+.gi-1_5x {font-size: 1.5em;}
+
+.panel-primary > .panel-heading {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.3);
+}
+
+ul.expandable {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: none;
+}
+.maxlist-more {
+    margin-bottom: 0; /* for expandable ul */
+}
+
+ul.glyphs {
+    overflow: hidden;
+}
+
+ul.glyphs li:before{
+    font-family: 'Glyphicons Halflings';
+    font-size: 10px;
+    position: relative;
+    margin-right: 7px;
+}
+
+ul.phone li:before {
+    content: "\e182"; /*glyphicon-earphone*/
+}
+
+ul.email li:before {
+    content: "\2709"; /*glyphicon-envelope*/
+}
+
+ul.fax li:before {
+    content: "\e022"; /*glyphicon-file*/
+}
+
+ul.chevron li:before {
+    content: "\e080"; /*glyphicon-chevron-right*/
+}
+
+.display-none {
+    display: none;
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.link-unstyled:hover {
+    opacity: 0.8;
+}
+
+
+.row.header-row {
+    margin-bottom: 10px;
+}
+
+.glyphicon.margined-icon {
+    margin-right: 5px;
+}
+
+.pill-narrow {
+    padding: 5px 10px !important;
+}
+
+.small-text {
+    font-size: 10px;
+}

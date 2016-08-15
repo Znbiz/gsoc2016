@@ -1,0 +1,91 @@
+body {
+    background: rgba(7, 23, 36, 1) url(../img/background-login.jpg) no-repeat center center fixed;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.logo {
+    max-height: 100px;
+    opacity: 0.6;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F5EED2;
+}
+
+.name-company {
+    font-family: Verdana;
+    letter-spacing:0.5px;
+    color: #F5EED2;
+    text-align: center;
+    text-shadow: -0 -1px 4px #071724,
+    0 -1px 4px #071724,
+    -0 1px 4px #071724,
+    0 1px 4px #071724,
+    -1px -0 4px #071724,
+    1px -0 4px #071724,
+    -1px 0 4px #071724,
+    1px 0 4px #071724,
+    -1px -1px 4px #071724,
+    1px -1px 4px #071724,
+    -1px 1px 4px #071724,
+    1px 1px 4px #071724,
+    -1px -1px 4px #071724,
+    1px -1px 4px #071724,
+    -1px 1px 4px #071724,
+    1px 1px 4px #071724;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 801px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (min-height: 600px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .name-company {
+        text-align: left;
+        margin-top: 150px;
+    }
+
+    .autoriz {
+        margin-top: 150px;
+    }
+}
+.input-lg{
+    color: #F5EED2;
+}
+
+.panel-primary{
+    background:rgba(7,23,36,0.7);
+    border-radius:10px;
+    border:0;
+}
+.panel-body{
+    background:rgba(7,23,36,0);
+}
+.footer{
+    background:rgba(7,23,36,0.8);
+    margin:0;
+}

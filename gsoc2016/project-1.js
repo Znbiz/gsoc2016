@@ -1,19 +1,3 @@
-//Bronchiseptica HGF IL-1 T-LGL-2011
-        //use this variable to switch between our testing graphs
-        // var graph = ["Bronchiseptica", "CD4", "EGFR", "ErbB", "FA-BRCA", 'Glucose',"HGF", "IL-1", "IL-6","Influenza", "T-Cell-Receptor", "T-Cell", "T-LGL-2011","T-LGL", "Yeast-Apoptosis", "circle-10","circle-100","circle-1000", "drosophila","fibroblast","graph-10-1","graph-10-2","graph-10-3","graph-100-1","graph-100-2","graph-100-3","graph-1000-1","graph-1000-2","graph-1000-3","line-10","line-100", "line-1000","macrophage","star-10","star-100","star-1000"]; 
-
-        // var graph = ["Bronchiseptica", "CD4", "EGFR", "ErbB", "FA-BRCA", 'Glucose',"HGF", "IL-1", "IL-6","Influenza", "T-Cell-Receptor", "T-Cell", "T-LGL-2011","T-LGL", "Yeast-Apoptosis", "circle-10","circle-100", "drosophila","fibroblast","graph-10-1","graph-10-2","graph-10-3","graph-100-1","graph-100-2","graph-100-3","line-10","line-100", "macrophage","star-10","star-100"];
-function graph_drawing(i){
-    $.ajax({
-            url:"http://helikarlab.github.io/ccNetViz/data/" + graph[i] + ".json",
-            type:"GET",
-            success: function(data) {
-                Grid(data,1);
-                $("#name").append(graph[i])
-            }
-    });
-}
-
 /**
  * Функция отрисовки графа
  * @param  {[type]} id_img     id div где нужно нарисовать граф
@@ -23,17 +7,11 @@ function graph_drawing(i){
  * @return {[type]}            [description]
  */
 function Draw(id_img, id_time, name_graph, layot){
-    $.ajax({
-            url:"http://helikarlab.github.io/ccNetViz/data/" + name_graph + ".json",
-            type:"GET",
-            async: false,
-            success: function(res) {
-                var time = Date.now();
-                Grid(res,layot, id_img);
-                time = Date.now() - time;
-                $("#"+id_time).append(time.toFixed(2));
-            }
-    });
+    var res = name_graph;
+    var time = Date.now();
+    Grid(res,layot, id_img);
+    time = Date.now() - time;
+    $("#"+id_time).append(time.toFixed(2));
 }
 
 

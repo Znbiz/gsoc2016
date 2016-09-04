@@ -31,22 +31,22 @@
                 </div>
                 <div class="col-md-6">
                     <blockquote>
-                        Do not be afraid of anything. Him who is afraid the failure persecuted. Fear is sometimes permissible in everyday life. But at crucial moment you chase the fear away. Having doubted even for a moment, you will be defeated.
+                        Do not be afraid of anything. If you are afraid, failure goes after you. Fear is an emotion that can be with us every day; but in our life we must to conquer fear at the most crucial monents. Having doubts even for a moment, you will be defeated.Takuan Soho.
                         <footer>Takuan Soho</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-12">
                     <h4>
-                        A little bit about the project...
+                        A few words about the project...
                     </h4>
                     <p>
-                        Hello! I want to to tell a little about the "summer internships" for students and what I did this summer :)
+                        Hello! I want to tell you a little about the "summer internship" for students and what I did this summer :)
                     </p>
                     <p>
-                        I worked on the project from <a href="http://helikarlab.org">Computational Biology @ University of Nebraska-Lincoln</a>. And these are my mentors who helped me in all the way of work <a href="http://helikarlab.org/members.html#">David Tichy, Tom Helikar</a>. 
+                        I worked on the project from <a href="http://helikarlab.org">Computational Biology @ University of Nebraska-Lincoln</a>. My mentors were <a href="http://helikarlab.org/members.html#">David Tichy, Tom Helikar</a>. 
                     </p>
                     <p>
-                        During this summer I needed perform two designs for library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a>. All my code can be viewed here in this repository <a href="https://github.com/Znbiz/HelikarLab">https://github.com/Znbiz/HelikarLab</a>. And here is you can see <a href="https://github.com/Znbiz/HelikarLab/commits/master">the commits</a>.
+                        During this summer I needed to perform two designs for library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a>. You can see my code here in this repository <a href="https://github.com/Znbiz/HelikarLab">https://github.com/Znbiz/HelikarLab</a>. And there are <a href="https://github.com/Znbiz/HelikarLab/commits/master">the commits</a>.
                     </p>
                 </div>
                 <div class="col-md-12">
@@ -55,7 +55,7 @@
                     </h4>
                     <ol>
                         <li> 
-                            Develop a algorithm of drawing graph on a rectangular grid for the library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a>. On the the drawn graph should clearly defined by clusters.
+                            Develop an algorithm of drawing graph on a rectangular grid for the library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a>. On the drawn graph should clearly be define by clusters.
                         </li>
                         <li>
                             Develop a SDF text generator that can run on the client side for the library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a>.
@@ -67,24 +67,24 @@
                         Target 1. Algorithm for of drawing graph on a rectangular grid.
                     </h4>
                     <p>
-                        Before me stood next task: to develop an algorithm capable to draw graphs are on a rectangular grid. Drawing required such a manner that clusters be clearly visible. For a basis of offers to take the following algorithm <a href="http://bioinformatics.oxfordjournals.org/content/21/9/2036.full#F1">algorithm for automatic drawing of biochemical networks</a>. I has implemented his, the code can be viewed <a href=https://github.com/Znbiz/HelikarLab/tree/master/Grid%20layout%20algorithm/Variant%202>here the</a>. By of this algorithm had to eventually refuse because his operating speed on graphs with the number of vertices is greater than 10 exp fall. This happened due to the fact that in the algorithm is based on a complicated enumeration method.
+                        I have got a task: to develop an algorithm that capable to draw graphs are on a rectangular grid. One of requirements of is that clusters be clearly visible. An <a href="http://bioinformatics.oxfordjournals.org/content/21/9/2036.full#F1">algorithm for automatic drawing of biochemical networks</a> is a basis of offers. I have carried out it, you can see it <a href=https://github.com/Znbiz/HelikarLab/tree/master/Grid%20layout%20algorithm/Variant%202>here</a>. However we had to refuse to this algorithm because his operating speed on graphs with the number of vertices is more than 10 exp fall. This happened by reason of that the algorithm was based on a complicated enumeration method.
                     </p>
                     <p>
-                        I suggested to move away from of this method and develop your own. My option was as search of a special number for each vertex, which would allow for one pass the vertices at a certain distance from each other. By this number was the number of of optimal ways extending through the top. Below are the pros and cons of this approach, and will show some examples of the algorithm.
+                        I suggested to go away from this method and to develop my own. My option was a search of a special number for each vertex, which would be allow for one pass the vertices at a certain distance from each other. This number has become the number of optimal ways extending through the top. Below you can see the advantages and disadvantages of this approach, and I will present some examples of the algorithm.
                     </p>
                     <p>
-                        Goodies: 
+                        Advantages: 
                         <ul>
-                            <li>On small graphs of (<= 100 vertices) are clearly visible clusters </li>
+                            <li>On small graphs of (<= 100 vertices) are clearly visible clusters</li>
                             <li>On the several orders of magnitude faster than algorithms, which also draws on the gridе</li>
                             <li>Simple to understanding</li>
                         </ul>
                     </p>
                     <p>
-                        Minuses: 
+                        Disadvantages: 
                         <ul>
                             <li>Very slow if the graph more than ~ 200 nodes. As compared with the force algorithm</li>
-                            <li>In some graphs of bad is the division of into clusters</li>
+                            <li>In some graphs of bad is the division of clusters</li>
                         </ul>
                     </p>
                     <p>
@@ -92,7 +92,7 @@
                             Conclusion:
                         </h5>
                         <br/>
-                        The algorithm has been adopted, but not embedded in the library as well as the on Graphs with the number of vertices of> 1000 browser hangs for a long time. I have a assumption on how to improve my algorithm quality and speed of, but this need to spend more time. Algorithm code can be found here <a href="https://github.com/Znbiz/HelikarLab/blob/master/src/layout/grid.js">github</a>
+                        The algorithm has adopted, but it has not embedded in the library because Graphs with the number of vertices of> 1000 browser hangs for a long time. I have a hypothesis about how to improve my algorithm quality and speed of, but it will take more time. Algorithm code can be found here <a href="https://github.com/Znbiz/HelikarLab/blob/master/src/layout/grid.js">github</a>
                     </p>
                     <div class="row">
                         <div class="col-md-12">
@@ -103,20 +103,20 @@
 
                         <div class="col-md-6">
                             <p>
-                                Count "HGF" drawn by the force algorithm not on the grid
+                                Count "HGF" drawn not on the grid by the force algorithm
                             </p>
                             <p>
-                                On the drawing the graph spent <span id="graph_1_time"></span> мс
+                                The drawing the graph has taken <span id="graph_1_time"></span> мс
                             </p>
                             <canvas id="graph_1_img" style="height: 250px;" class="img-responsive center-block"/>
                             <script type="text/javascript">Draw("graph_1_img", "graph_1_time", HGF_graph, 1); </script>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                Count "HGF" drawn by my algorithm on grid
+                                Count "HGF" drawn on grid by my algorithm 
                             </p>
                             <p>
-                                On the drawing the graph spent <span id="graph_2_time"></span> мс
+                                The drawing the graph has taken <span id="graph_2_time"></span> мс
                             </p>
                             <canvas id="graph_2_img" style="height: 250px;" class="img-responsive center-block"/>
                             <script type="text/javascript">Draw("graph_2_img", "graph_2_time", HGF_graph, 2); </script>
@@ -124,20 +124,20 @@
 
                         <div class="col-md-6">
                             <p>
-                                Count "Bronchiseptica" drawn by the force algorithm not on the grid
+                                Count "Bronchiseptica" drawn not on the grid by the force algorithm 
                             </p>
                             <p>
-                                On the drawing the graph spent <span id="graph_3_time"></span> мс
+                                The drawing the graph has taken <span id="graph_3_time"></span> мс
                             </p>
                             <canvas id="graph_3_img" style="height: 250px;" class="img-responsive center-block"/>
                             <script type="text/javascript">Draw("graph_3_img", "graph_3_time", Bronchjseptica_graph, 1); </script>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                Count "Bronchiseptica" drawn by my algorithm on grid
+                                Count "Bronchiseptica" drawn on grid by my algorithm 
                             </p>
                             <p>
-                                On the drawing the graph spent <span id="graph_4_time"></span> мс
+                                The drawing the graph has taken <span id="graph_4_time"></span> мс
                             </p>
                             <canvas id="graph_4_img" style="height: 250px;" class="img-responsive center-block"/>
                             <script type="text/javascript">Draw("graph_4_img", "graph_4_time", Bronchjseptica_graph, 2); </script>
@@ -149,24 +149,24 @@
                         Target 2. Development SDF generator for text.
                     </h4>
                     <p>
-                        Now the library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a> draws signatures of vertices in one texture. This slows down the the rendering of the text with increasing the graph, and also makes it impossible to work with a variety of effects for text.
+                        Now the library <a href="https://github.com/helikarlab/ccNetViz">ccNetViz</a> draws signatures of vertices in one texture. It makes the rendering of the text with increasing the graph slower, and it also does not give an opportunity to work with a variety of effects for text.
                     </p>
                     <p>
                         To achieve the goal, it was decided to split task into several ones of subproblems.
                         <ol>
                             <li> 
-                                Develop a generator SDF text more precise SDF atlas. What is the SDF can find out from the article <a href="http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf">Improved Alpha-Tested Magnification for Vector Textures and Special Effects</a>. The main thing this algorithm been to realize such a way that it worked on the client side.
+                                To develop a generator SDF text, more accurate SDF atlas. What is the SDF you can find out from the article <a href="http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf">Improved Alpha-Tested Magnification for Vector Textures and Special Effects</a>. It is important to realize this algorithm such a way that it will work on the client side.
                             </li>
                             <li>
-                                Make the display of text such a way order to its texture is created for each character. That is drawing of each character separately.
+                                To make the display of text that its texture is created for each symbol. It means that drawing of each symbol is separate.
                             </li>
                             <li>
-                                Integrate the above tools to the library.
+                                To integrate the above tools to the library.
                             </li>
                         </ol>
                     </p>
                     <p>
-                        SDF implements a simple algorithm in pure JavaScript to get the results which could not be incorporated into ccNetViz library. Since the processing time atlas containing 250 characters occupied a more than 10 seconds. After by me been a proposal to make all the calculations algortima using WebGL. The result of this decisions was the reduction in the processing time of the atlas 250 characters to a few tenths of a second ~ 0.6 seconds. The following is a working generator SDF.
+                        SDF implements a simple algorithm in pure JavaScript to get the results which could not be incorporated into ccNetViz library. Since the processing time atlas containing 250 symbols occupied a more than 10 seconds. After I have made a suggestion to make all the calculations algoritma using WebGL The result of this decisions was the reduction in the processing time of the atlas 250 symbols to a few tenths of a second ~ 0.6 seconds. A working generator SDF is below.
                     </p>
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -186,51 +186,51 @@
                     </div>
 
                     <p>
-                        Also, the possibility has been implemented in libraries to use the pre-generated on the server atlases. 
+                        Also, the possibility has been implemented in libraries to use the pre-generated on the server atlases.
                     </p>
 
                     <p>
-                        <strong>All three methods of displaying the names of vertices included in the library. Pluses and minuses these three approaches displaying text.</strong>
+                        <strong>All three methods of displaying the names of vertices have included in the library. Advantages and disadvantages of these three approaches are displaying text.</strong>
                     </p>
                     <div class="row">
                         <div class="col-md-4">
                             <p>
-                                Rendering the vertex the names on the same texture (as it was before)
+                                Rendering the vertex the names on the same texture (as it was before) 
                                 <br/>
-                                Goodies:
+                                Advantages:
                                 <ul>
                                     <li>
                                         No need to access the server
                                     </li>
                                     <li>
-                                        The average speed of of drawing
+                                        The average speed of drawing
                                     </li>
                                     <li>
                                         Ability to specify your unique font
                                     </li>
                                 </ul>
-                                Minuses:
+                                Disadvantages:
                                 <ul>
                                     <li>
-                                        Resource-costly work with text
+                                        The resource-costly work with text
                                     </li>
                                     <li>
-                                        With an increase in quality of the text decreases
+                                        The quality of the text decreases with an increase
                                     </li>
                                 </ul>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <p>
-                                When the vertex of drawing names for each character uses its own texture. Texture is is taken from the SDF atlas generated on the client 
+                                When the vertex of drawing names for each symbols it uses its own texture. Texture is taken from the SDF atlas that generated on the client 
                                 <br/>
-                                Goodies:
+                                Advantages:
                                 <ul>
                                     <li>
                                         No need to access the server
                                     </li>
                                     <li>
-                                        The text is displayed as vectorial. With an increase in he does not lose the quality.
+                                        The text is displayed as vectorial. It does not lose the quality with an increase.
                                     </li>
                                     <li>
                                         Ability to specify your unique font
@@ -239,19 +239,19 @@
                                         The possibility to apply to the text of various effects and more accurately configure the display of titles vertices
                                     </li>
                                 </ul>
-                                Minuses:
+                                Disadvantages:
                                 <ul>
                                     <li>
-                                        Low of drawing speed compared with other methods. The higher the quality of of generation SDF atlas and the more is required draw the of symbols on the atlas, the more time is required.
+                                        Low of drawing speed as compared with other methods. The higher the quality of generation SDF atlas and the more the quantity  of drawing symbols on the atlas take more time.
                                     </li>
                                 </ul>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <p>
-                                When the vertex of drawing names for each character uses its own texture. Texture is is taken from the SDF atlas advance generated on the server 
+                                When the vertex of drawing names for each symbol it uses its own texture. Texture is taken from the SDF atlas advance generated on the server  
                                 <br/>
-                                Goodies:
+                                Advantages:
                                 <ul>
                                     <li>
                                         High quality atlas SDF
@@ -260,13 +260,13 @@
                                         High-speed of drawing of text
                                     </li>
                                 </ul>
-                                Minuses:
+                                Disadvantages:
                                 <ul>
                                     <li>
                                         It is necessary to access the server
                                     </li>
                                     <li>
-                                        You can not set your unique font
+                                        You cannot set your unique font
                                     </li>
                                 </ul>
                             </p>
@@ -276,7 +276,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h5>
-                                Comparison: <small>To see the the name of the graph vertices increase</small>
+                                Comparison: <small>To see the name of the graph vertices increase</small>
                             </h5>
                         </div>
 
@@ -285,7 +285,7 @@
                                 Rendering the vertex the names on the same texture (as it was before)
                             </p>
                             <p>
-                                Time spent in the rendering graphics: <span id="time_text_1"></span> мс
+                                The rendering graphics has taken <span id="time_text_1"></span> мс
                             </p>
                             <p>
                                 <canvas id="img_text_1" class="img-responsive center-block"/>
@@ -297,10 +297,10 @@
                         </div>
                         <div class="col-md-4">
                             <p>
-                                When the vertex of drawing names for each character uses its own texture. Texture is is taken from the SDF atlas generated on the client
+                                When the vertex of drawing names for each character it uses its own texture. Texture is taken from the SDF atlas generated on the client 
                             </p>
                             <p>
-                                Time spent in the rendering graphics: <span id="time_text_2"></span> мс
+                                The rendering graphics has taken <span id="time_text_2"></span> мс
                             </p>
                             <p>
                                 <canvas id="img_text_2" class="img-responsive center-block"/>
@@ -312,10 +312,10 @@
                         </div>
                         <div class="col-md-4">
                             <p>
-                                When the vertex of drawing names for each character uses its own texture. Texture is is taken from the SDF atlas advance generated on the server 
+                                When the vertex of drawing names for each character it uses its own texture. Texture is taken from the SDF atlas advance generated on the server
                             </p>
                             <p>
-                                Time spent in the rendering graphics: <span id="time_text_3"></span> мс
+                                The rendering graphics has taken <span id="time_text_3"></span> мс
                             </p>
                             <p>
                                 <canvas id="img_text_3" class="img-responsive center-block"/>
@@ -331,7 +331,7 @@
                             Conclusion:
                         </h5>
                         <br/>
-                        I have suggestion that the quality atlas of drawing on the client side can be improved. In order to optimize and improvement of SDF algorithm WebGL take long, so as earlier no one this implemented the algorithm on WebGL. There are where to develop :)
+                        I have suggestion that the quality atlas of drawing on the client side can be improved. In order to optimize and improvement of SDF algorithm WebGL can take long, because nobody implemented this algorithm on WebGL before. We have many ways to develop :)
                     </p>
                 </div>
             </div>
